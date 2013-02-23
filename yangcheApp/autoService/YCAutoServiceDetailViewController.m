@@ -17,6 +17,7 @@
 #import "YCAutoServiceShopDetailViewController.h"
 #import "YCMapViewController.h"
 #import "YCCommentsViewController.h"
+#import "YCAutoServiceOrderFormViewController.h"
 
 @interface YCAutoServiceDetailViewController (){
 	YCMocManager* mocManager;
@@ -68,6 +69,9 @@
 	}else if ([segue.identifier isEqualToString:@"showComments"]){
 		YCCommentsViewController* commentsViewController = [segue destinationViewController];
 		commentsViewController.moURI = [[autoService objectID] URIRepresentation];
+	}else if ([segue.identifier isEqualToString:@"showOrderForm"]){
+		YCAutoServiceOrderFormViewController* orderFormViewController = [segue destinationViewController];
+		orderFormViewController.moURI = [[autoService objectID] URIRepresentation];
 	}
 }
 

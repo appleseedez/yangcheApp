@@ -98,7 +98,7 @@
 #pragma mark - segue action
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	if ([segue.identifier isEqualToString:@"showDetail"]) {
+	if ([segue.identifier isEqualToString:@"showAutoServiceDetail"]) {
 		YCAutoServiceDetailViewController* detailViewController = [segue destinationViewController];
 		NSIndexPath* index = [self.tableView indexPathForSelectedRow];
 
@@ -184,7 +184,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 	
-	[self performSegueWithIdentifier:@"showDetail" sender:self];
+//	[self performSegueWithIdentifier:@"showDetail" sender:self];
 	
 }
 #pragma mark - scroll delegate

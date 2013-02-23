@@ -1057,9 +1057,15 @@
 		1895614116BAAA6A00DF14FE /* evernote-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895613F16BAAA6A00DF14FE /* evernote-gray.png */; };
 		1895614216BAAA6A00DF14FE /* evernote-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895614016BAAA6A00DF14FE /* evernote-gray@2x.png */; };
 		1895614516BACFCA00DF14FE /* UIImage+YCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895614416BACFCA00DF14FE /* UIImage+YCUtils.m */; };
+		1895D22016D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895D21F16D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m */; };
+		1895D22116D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895D21F16D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m */; };
 		189DD93216AD27B90079D737 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DD93116AD27B90079D737 /* MapKit.framework */; };
 		189DD93616AD28A60079D737 /* YCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DD93516AD28A60079D737 /* YCMapViewController.m */; };
 		189DD93716AD28A60079D737 /* YCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DD93516AD28A60079D737 /* YCMapViewController.m */; };
+		18AA4BED16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA4BEC16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib */; };
+		18AA4BEE16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA4BEC16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib */; };
+		18AA4BF116D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AA4BF016D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m */; };
+		18AA4BF216D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AA4BF016D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m */; };
 		18B3BDF416A4E13F002486C7 /* YCAutoServiceMetaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3BDF316A4E13F002486C7 /* YCAutoServiceMetaCell.m */; };
 		18B3BDF516A4E13F002486C7 /* YCAutoServiceMetaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3BDF316A4E13F002486C7 /* YCAutoServiceMetaCell.m */; };
 		18B3BDF816A501C9002486C7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3BDF716A501C9002486C7 /* bg.png */; };
@@ -2054,9 +2060,14 @@
 		1895614016BAAA6A00DF14FE /* evernote-gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evernote-gray@2x.png"; sourceTree = "<group>"; };
 		1895614316BACFCA00DF14FE /* UIImage+YCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YCUtils.h"; sourceTree = "<group>"; };
 		1895614416BACFCA00DF14FE /* UIImage+YCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YCUtils.m"; sourceTree = "<group>"; };
+		1895D21E16D75A6100B84E85 /* YCAutoServiceOrderFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAutoServiceOrderFormViewController.h; sourceTree = "<group>"; };
+		1895D21F16D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAutoServiceOrderFormViewController.m; sourceTree = "<group>"; };
 		189DD93116AD27B90079D737 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		189DD93416AD28A60079D737 /* YCMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMapViewController.h; sourceTree = "<group>"; };
 		189DD93516AD28A60079D737 /* YCMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMapViewController.m; sourceTree = "<group>"; };
+		18AA4BEC16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCOrderFormInputAccessoryToolbarView.xib; sourceTree = "<group>"; };
+		18AA4BEF16D895D400C8962F /* YCOrderFormInputAccessoryToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCOrderFormInputAccessoryToolbar.h; sourceTree = "<group>"; };
+		18AA4BF016D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCOrderFormInputAccessoryToolbar.m; sourceTree = "<group>"; };
 		18B3BDF216A4E13F002486C7 /* YCAutoServiceMetaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAutoServiceMetaCell.h; sourceTree = "<group>"; };
 		18B3BDF316A4E13F002486C7 /* YCAutoServiceMetaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAutoServiceMetaCell.m; sourceTree = "<group>"; };
 		18B3BDF716A501C9002486C7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -2900,6 +2911,9 @@
 				1895613616BAA26300DF14FE /* BackgroundView.xib */,
 				1895613816BAA33500DF14FE /* YCBackgroundView.h */,
 				1895613916BAA33500DF14FE /* YCBackgroundView.m */,
+				18AA4BEC16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib */,
+				18AA4BEF16D895D400C8962F /* YCOrderFormInputAccessoryToolbar.h */,
+				18AA4BF016D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m */,
 			);
 			name = customView;
 			sourceTree = "<group>";
@@ -2924,6 +2938,8 @@
 				180CA3D916B79C2100368DD2 /* YCCommentsViewController.m */,
 				1895610D16B911AD00DF14FE /* YCPostCommentViewController.h */,
 				1895610E16B911AD00DF14FE /* YCPostCommentViewController.m */,
+				1895D21E16D75A6100B84E85 /* YCAutoServiceOrderFormViewController.h */,
+				1895D21F16D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m */,
 			);
 			path = autoService;
 			sourceTree = "<group>";
@@ -4287,6 +4303,7 @@
 				18D4879416C901B600710CC1 /* bg_seg@2x.png in Resources */,
 				18D4879716C9096E00710CC1 /* 145-gpersondot@2x.png in Resources */,
 				18D4879816C9096E00710CC1 /* 145-gpersondot.png in Resources */,
+				18AA4BED16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4467,6 +4484,7 @@
 				1895612316B970D000DF14FE /* OverLayView.xib in Resources */,
 				1895613216B9AB4C00DF14FE /* CategoryOverLayView.xib in Resources */,
 				1895613516B9AB6B00DF14FE /* SortMethodOverLayView.xib in Resources */,
+				18AA4BEE16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4541,6 +4559,8 @@
 				1895614516BACFCA00DF14FE /* UIImage+YCUtils.m in Sources */,
 				1800AB3F16C4FFBF00BE307E /* YCShopHeadActionCell.m in Sources */,
 				1800AB4216C50C8500BE307E /* YCShopDetailMetaCell.m in Sources */,
+				1895D22016D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m in Sources */,
+				18AA4BF116D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4576,6 +4596,8 @@
 				1895612716B9724C00DF14FE /* YCSeachConditionCell.m in Sources */,
 				1895612B16B9A9C000DF14FE /* YCSortMethodOverLayView.m in Sources */,
 				1895612F16B9A9EC00DF14FE /* YCCategoryOverLayView.m in Sources */,
+				1895D22116D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m in Sources */,
+				18AA4BF216D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4625,6 +4647,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		181EA43316D35120000BDAA8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "DEABC69A-65CE-434E-94C3-97C45F71F4E5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		181EA43416D35120000BDAA8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "yangcheApp/yangcheApp-Prefix.pch";
+				INFOPLIST_FILE = "yangcheApp/yangcheApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		181EA43516D35120000BDAA8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/yangcheApp.app/yangcheApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "yangcheApp/yangcheApp-Prefix.pch";
+				INFOPLIST_FILE = "yangcheAppTests/yangcheAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
 		18DC5A03169B140500B79E9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4635,7 +4714,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -4648,7 +4727,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "DEABC69A-65CE-434E-94C3-97C45F71F4E5";
 				SDKROOT = iphoneos;
@@ -4666,13 +4745,13 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "DEABC69A-65CE-434E-94C3-97C45F71F4E5";
 				SDKROOT = iphoneos;
@@ -4684,12 +4763,14 @@
 		18DC5A06169B140500B79E9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yangcheApp/yangcheApp-Prefix.pch";
 				INFOPLIST_FILE = "yangcheApp/yangcheApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DEABC69A-65CE-434E-94C3-97C45F71F4E5";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -4697,12 +4778,14 @@
 		18DC5A07169B140500B79E9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingyu Zeng (3T7FB5TX86)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yangcheApp/yangcheApp-Prefix.pch";
 				INFOPLIST_FILE = "yangcheApp/yangcheApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DEABC69A-65CE-434E-94C3-97C45F71F4E5";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -4749,6 +4832,7 @@
 			buildConfigurations = (
 				18DC5A03169B140500B79E9A /* Debug */,
 				18DC5A04169B140500B79E9A /* Release */,
+				181EA43316D35120000BDAA8 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4758,6 +4842,7 @@
 			buildConfigurations = (
 				18DC5A06169B140500B79E9A /* Debug */,
 				18DC5A07169B140500B79E9A /* Release */,
+				181EA43416D35120000BDAA8 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4767,6 +4852,7 @@
 			buildConfigurations = (
 				18DC5A09169B140500B79E9A /* Debug */,
 				18DC5A0A169B140500B79E9A /* Release */,
+				181EA43516D35120000BDAA8 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
