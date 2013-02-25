@@ -1080,7 +1080,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="联系方式" minimumFontSize="17" clearButtonMode="whileEditing" id="GRZ-ff-YNw">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="联系方式" minimumFontSize="17" clearButtonMode="whileEditing" id="GRZ-ff-YNw">
                                                     <rect key="frame" x="20" y="0.0" width="260" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1100,7 +1100,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="称呼" minimumFontSize="17" clearButtonMode="whileEditing" id="1f1-MR-sHp">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="称呼" minimumFontSize="17" clearButtonMode="whileEditing" id="1f1-MR-sHp">
                                                     <rect key="frame" x="20" y="0.0" width="260" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1120,7 +1120,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="预约时间" minimumFontSize="17" clearButtonMode="whileEditing" id="R36-93-TeU">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="预约时间" minimumFontSize="17" clearButtonMode="whileEditing" id="R36-93-TeU">
                                                     <rect key="frame" x="20" y="0.0" width="260" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1144,7 +1144,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="电邮" minimumFontSize="17" clearButtonMode="whileEditing" id="817-l5-L3f">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="电邮" minimumFontSize="17" clearButtonMode="whileEditing" id="817-l5-L3f">
                                                     <rect key="frame" x="20" y="0.0" width="260" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1158,17 +1158,40 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FormItemCarInfoCell" id="ken-Oq-ITs">
-                                        <rect key="frame" x="0.0" y="271" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="271" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="车型" minimumFontSize="17" id="DTB-er-OLY">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="车型" minimumFontSize="17" id="DTB-er-OLY">
                                                     <rect key="frame" x="20" y="0.0" width="260" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="RWP-oU-3vu" id="H0O-2C-lxN"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FormItemCarInfoCell" id="ilz-Rm-Jxl">
+                                        <rect key="frame" x="0.0" y="315" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="抵用积分" minimumFontSize="17" id="UPN-4O-EFG">
+                                                    <rect key="frame" x="20" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="RWP-oU-3vu" id="tXx-b6-qUM"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1221,6 +1244,7 @@
                         <outlet property="orderFormContactField" destination="GRZ-ff-YNw" id="6ql-Xh-hFY"/>
                         <outlet property="orderFormEmailOptionField" destination="817-l5-L3f" id="P42-Gz-0Gd"/>
                         <outlet property="orderFormNameField" destination="1f1-MR-sHp" id="wlz-pl-31A"/>
+                        <outlet property="orderFormPointsOptionField" destination="UPN-4O-EFG" id="nP7-A5-PYt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5S-Ms-B4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1360,6 +1384,7 @@
                 <relationship kind="outlet" name="orderFormContactField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="orderFormEmailOptionField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="orderFormNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="orderFormPointsOptionField" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="YCAutoServiceShopDetailViewController" superclassName="UIViewController">
@@ -1458,7 +1483,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ICn-xz-851"/>
         <segue reference="dJy-G9-fMX"/>
+        <segue reference="ICn-xz-851"/>
     </inferredMetricsTieBreakers>
 </document>

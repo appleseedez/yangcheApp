@@ -16,6 +16,7 @@
     if (self) {
         self = [[NSBundle mainBundle] loadNibNamed:@"YCOrderFormInputAccessoryToolbarView" owner:self options:nil][0];
     }
+	
     return self;
 }
 

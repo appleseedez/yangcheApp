@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface YCOrderFormInputAccessoryToolbar : UIToolbar
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *prevBtn;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextBtn;
-
+@property (weak, nonatomic) IBOutlet UIButton *prevBtn;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
+@property (weak, nonatomic) IBOutlet UIButton *closeKeybord;
+@property (nonatomic) NSInteger currentFocusFieldIndex;
 @end

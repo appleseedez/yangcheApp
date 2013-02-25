@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-@interface YCMapViewController : UIViewController
+@interface YCMapViewController : UIViewController <CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak,nonatomic) NSURL* moURI;
 @end

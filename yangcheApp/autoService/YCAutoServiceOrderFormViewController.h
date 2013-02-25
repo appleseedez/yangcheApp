@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *orderFormAppointmentField;
 @property (weak, nonatomic) IBOutlet UITextField *orderFormEmailOptionField;
 @property (weak, nonatomic) IBOutlet UITextField *orderFormCarInfoOptionField;
+@property (weak, nonatomic) IBOutlet UITextField *orderFormPointsOptionField;
 @property (weak,nonatomic) NSURL* moURI;
 @end
