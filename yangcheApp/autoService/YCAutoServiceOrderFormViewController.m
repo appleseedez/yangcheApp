@@ -129,7 +129,7 @@
 
 
 - (void) hideKeyboard{
-	NSLog(@"%i",accessoryToolbar.currentFocusFieldIndex);
+	
 	[[self.view viewWithTag:accessoryToolbar.currentFocusFieldIndex] resignFirstResponder] ;
 }
 

@@ -44,4 +44,25 @@
     [self presentViewController:[sericeDetailSB instantiateInitialViewController] animated:YES completion:nil];
 }
 
+- (IBAction)indexInsurance:(id)sender{
+	UIStoryboard* insuranceDetailSB = [UIStoryboard storyboardWithName:@"Insurance_Storyboard_iPhone" bundle:nil];
+    [self presentViewController:[insuranceDetailSB instantiateInitialViewController] animated:YES completion:nil];
+}
+
+- (IBAction)indexQuickSavior:(id)sender{
+	
+}
+
+- (IBAction)indexInDoorService:(id)sender{
+	
+}
+
+- (IBAction)indexInquirance:(id)sender{
+	
+}
+
+- (IBAction)indexClaims:(id)sender{
+	UIStoryboard* claimDetailSB = [UIStoryboard storyboardWithName:@"Claims_Storyboard_iPhone" bundle:nil];
+    [self presentViewController:[claimDetailSB instantiateInitialViewController] animated:YES completion:nil];
+}
 @end

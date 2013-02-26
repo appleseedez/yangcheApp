@@ -19,6 +19,7 @@
 	
 	
 	[[UITabBar appearance] setBackgroundImage:bg];
+	
 
     return YES;
 }

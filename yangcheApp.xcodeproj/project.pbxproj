@@ -733,6 +733,18 @@
 		185DBF3416D9AD9E00E048A1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DBF3316D9AD9E00E048A1 /* CoreLocation.framework */; };
 		1865B50716AEBD43002DA68A /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865B50616AEBD43002DA68A /* nav_bg.png */; };
 		1865B50916AEBDFA002DA68A /* nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865B50816AEBDFA002DA68A /* nav_bg@2x.png */; };
+		186CE19D16DBC2360020B657 /* YCGlobalSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE19C16DBC2360020B657 /* YCGlobalSearchViewController.m */; };
+		186CE19E16DBC2360020B657 /* YCGlobalSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE19C16DBC2360020B657 /* YCGlobalSearchViewController.m */; };
+		186CE1A216DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CE1A116DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard */; };
+		186CE1A316DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CE1A116DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard */; };
+		186CE1A516DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CE1A416DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard */; };
+		186CE1A616DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CE1A416DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard */; };
+		186CE1A916DC313E0020B657 /* YCInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1A816DC313E0020B657 /* YCInsuranceViewController.m */; };
+		186CE1AA16DC313E0020B657 /* YCInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1A816DC313E0020B657 /* YCInsuranceViewController.m */; };
+		186CE1AD16DC32640020B657 /* YCClaimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1AC16DC32640020B657 /* YCClaimViewController.m */; };
+		186CE1AE16DC32640020B657 /* YCClaimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1AC16DC32640020B657 /* YCClaimViewController.m */; };
+		186CE1B116DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */; };
+		186CE1B216DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */; };
 		186D834B16A152F0001089E5 /* 00_License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 186D82BC16A152F0001089E5 /* 00_License.txt */; };
 		186D834C16A152F0001089E5 /* 00_License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 186D82BC16A152F0001089E5 /* 00_License.txt */; };
 		186D834D16A152F0001089E5 /* alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186D82BD16A152F0001089E5 /* alarm@2x.png */; };
@@ -2003,6 +2015,16 @@
 		185DBF3316D9AD9E00E048A1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1865B50616AEBD43002DA68A /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg.png; sourceTree = "<group>"; };
 		1865B50816AEBDFA002DA68A /* nav_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bg@2x.png"; sourceTree = "<group>"; };
+		186CE19B16DBC2360020B657 /* YCGlobalSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCGlobalSearchViewController.h; sourceTree = SOURCE_ROOT; };
+		186CE19C16DBC2360020B657 /* YCGlobalSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCGlobalSearchViewController.m; sourceTree = SOURCE_ROOT; };
+		186CE1A116DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Claims_Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
+		186CE1A416DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Insurance_Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
+		186CE1A716DC313E0020B657 /* YCInsuranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCInsuranceViewController.h; sourceTree = "<group>"; };
+		186CE1A816DC313E0020B657 /* YCInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCInsuranceViewController.m; sourceTree = "<group>"; };
+		186CE1AB16DC32640020B657 /* YCClaimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCClaimViewController.h; sourceTree = "<group>"; };
+		186CE1AC16DC32640020B657 /* YCClaimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCClaimViewController.m; sourceTree = "<group>"; };
+		186CE1AF16DC3A320020B657 /* YCInsuranceApplyFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCInsuranceApplyFormViewController.h; sourceTree = "<group>"; };
+		186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCInsuranceApplyFormViewController.m; sourceTree = "<group>"; };
 		186D82BC16A152F0001089E5 /* 00_License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00_License.txt; sourceTree = "<group>"; };
 		186D82BD16A152F0001089E5 /* alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@2x.png"; sourceTree = "<group>"; };
 		186D82BE16A152F0001089E5 /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down@2x.png"; sourceTree = "<group>"; };
@@ -3224,6 +3246,28 @@
 			path = home;
 			sourceTree = "<group>";
 		};
+		186CE19F16DC2D750020B657 /* claim */ = {
+			isa = PBXGroup;
+			children = (
+				186CE1A116DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard */,
+				186CE1AB16DC32640020B657 /* YCClaimViewController.h */,
+				186CE1AC16DC32640020B657 /* YCClaimViewController.m */,
+			);
+			path = claim;
+			sourceTree = "<group>";
+		};
+		186CE1A016DC2D800020B657 /* insurance */ = {
+			isa = PBXGroup;
+			children = (
+				186CE1A416DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard */,
+				186CE1A716DC313E0020B657 /* YCInsuranceViewController.h */,
+				186CE1A816DC313E0020B657 /* YCInsuranceViewController.m */,
+				186CE1AF16DC3A320020B657 /* YCInsuranceApplyFormViewController.h */,
+				186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */,
+			);
+			path = insurance;
+			sourceTree = "<group>";
+		};
 		186D82BA16A152F0001089E5 /* tabicon */ = {
 			isa = PBXGroup;
 			children = (
@@ -3463,6 +3507,15 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		18A2E5E816DBA908008E5989 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				186CE19B16DBC2360020B657 /* YCGlobalSearchViewController.h */,
+				186CE19C16DBC2360020B657 /* YCGlobalSearchViewController.m */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
 		18C2EE2416B4DAC700E28BEE /* customScroll */ = {
 			isa = PBXGroup;
 			children = (
@@ -3639,6 +3692,9 @@
 		18DC59D3169B140500B79E9A /* yangcheApp */ = {
 			isa = PBXGroup;
 			children = (
+				186CE1A016DC2D800020B657 /* insurance */,
+				186CE19F16DC2D750020B657 /* claim */,
+				18A2E5E816DBA908008E5989 /* search */,
 				1810B7F316A3624E00BA6674 /* home */,
 				1810B7E216A2A1B900BA6674 /* autoService */,
 				186D848D16A257D8001089E5 /* utils */,
@@ -4796,6 +4852,8 @@
 				18CDB86616DB4D270065BA86 /* 59-woman@2x.png in Resources */,
 				18CDB86716DB4D270065BA86 /* 60-x.png in Resources */,
 				18CDB86816DB4D270065BA86 /* 60-x@2x.png in Resources */,
+				186CE1A216DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard in Resources */,
+				186CE1A516DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4977,6 +5035,8 @@
 				1895613216B9AB4C00DF14FE /* CategoryOverLayView.xib in Resources */,
 				1895613516B9AB6B00DF14FE /* SortMethodOverLayView.xib in Resources */,
 				18AA4BEE16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib in Resources */,
+				186CE1A316DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard in Resources */,
+				186CE1A616DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5053,6 +5113,10 @@
 				1800AB4216C50C8500BE307E /* YCShopDetailMetaCell.m in Sources */,
 				1895D22016D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m in Sources */,
 				18AA4BF116D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m in Sources */,
+				186CE19D16DBC2360020B657 /* YCGlobalSearchViewController.m in Sources */,
+				186CE1A916DC313E0020B657 /* YCInsuranceViewController.m in Sources */,
+				186CE1AD16DC32640020B657 /* YCClaimViewController.m in Sources */,
+				186CE1B116DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5090,6 +5154,10 @@
 				1895612F16B9A9EC00DF14FE /* YCCategoryOverLayView.m in Sources */,
 				1895D22116D75A6100B84E85 /* YCAutoServiceOrderFormViewController.m in Sources */,
 				18AA4BF216D895D400C8962F /* YCOrderFormInputAccessoryToolbar.m in Sources */,
+				186CE19E16DBC2360020B657 /* YCGlobalSearchViewController.m in Sources */,
+				186CE1AA16DC313E0020B657 /* YCInsuranceViewController.m in Sources */,
+				186CE1AE16DC32640020B657 /* YCClaimViewController.m in Sources */,
+				186CE1B216DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
