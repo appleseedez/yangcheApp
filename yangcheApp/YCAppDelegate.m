@@ -7,23 +7,43 @@
 //
 
 #import "YCAppDelegate.h"
-
+#import "PKRevealController.h"
+#import "YCNotifyIndexViewController.h"
+#import "YCExtraInfoViewController.h"
 @implementation YCAppDelegate
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+	// 导航栏皮肤
+	UIImage *bg = [[UIImage imageNamed:@"nav_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+	[[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
+	// 工具栏皮肤
+	[[UITabBar appearance] setBackgroundImage:bg];
+	
+	// 将PKRevealController 添加进来
+	
+	UIViewController* frontViewController =  self.window.rootViewController;
+	UIStoryboard* notifySB = [UIStoryboard storyboardWithName:@"Notify_iPhone_Storyboard" bundle:nil];
+	UIStoryboard* extraInfoSB = [UIStoryboard storyboardWithName:@"Extra_iPhone_Storyboard" bundle:nil];
+	
+	YCNotifyIndexViewController* notifyListViewController = [notifySB instantiateInitialViewController];
+	YCExtraInfoViewController* extraInfoListViewController = [extraInfoSB instantiateInitialViewController];
+	
+	self.revealController =[PKRevealController revealControllerWithFrontViewController:frontViewController
+																				 leftViewController:notifyListViewController
+																				rightViewController:extraInfoListViewController
+										 										options:nil];
+
+	self.window.rootViewController = self.revealController;
+	return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-	UIImage *bg = [[UIImage imageNamed:@"nav_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
 
-	[[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
-	
-	
-	[[UITabBar appearance] setBackgroundImage:bg];
-	
-
+	[self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -15,6 +15,7 @@
 #import "AutoService.h"
 #import "Shop.h"
 #import "Comment.h"
+#import "Notify.h"
 #import "YCSeachConditionCell.h"
 #import "YCOverLayView.h"
 #import "YCCategoryOverLayView.h"
@@ -325,7 +326,15 @@
 	@"汽车养护用品，很简单，从字面就可以理解，就是对汽车进行保养的产品。曾几何时，汽车养护用品仅仅只是存在国内的高端消费人群，随着中国的强大，经济的高速发展，人民生活水平的快速提高，汽车已经慢慢的>成为了一种“家用电器”。汽车养护用品也慢慢的深入到大家的活，因此对于大部分人来说，也非常有必要对汽车养护用品有一个非常准确的了解。\n\t汽车养护用品对于汽车，就好像生活用品对于人；人有吃穿住行的需求，汽车也有自己13大系统的保养需要。俗语道：爱车，“七分养，三分修”，精心养护能让汽车时刻保持最工况或恢复汽车应有的性能，以最>大限度确保汽车的安全性，降低养车费用。经常保持车辆各个系统的清洁和润滑就能实现“以保代养，以养避修”，既能节约大笔维修费用，又能延长车辆的使用寿命，这也是汽车养护用品存在的意义之所在。",
 	@"爱是绝对没有模式和规律的，爱也是不可能说清楚的。说得清楚的即不是爱，而只是一种利益的结合。我从来不相信门当户对的婚姻会幸福，更不相信年龄匹配，学识相似，男才女貌的姻缘会幸福。爱应该象一泓清馨的甘水。\r\n——美·卢森"];
 	NSArray* commenters = @[@"Appleseedez",@"DayFly",@"WenTao",@"法海",@"白娘子",@"许仙"];
-
+	
+	// notify
+	NSArray* notifyTitles = @[@"你有新的预订",@"评价下服务吧,亲",@"笑傲江湖又开始了",@"东方不败挂了",@"令狐冲又受伤了"];
+	
+	Notify* notify=[mocManager insertNewObjectForEntityForName:@"Notify"];
+	notify.title = notifyTitles[arc4random_uniform([notifyTitles count])];
+	notify.type = thumbTestArr[arc4random_uniform([thumbTestArr count])];
+	
+	// 店铺数据
 	Shop* shop = [mocManager insertNewObjectForEntityForName:@"Shop"];
 	shop.name = shopNameArr[arc4random_uniform([shopNameArr count])];
 	shop.contact =shopContactArr[arc4random_uniform([shopContactArr count])];

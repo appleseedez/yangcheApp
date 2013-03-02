@@ -302,6 +302,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="toggleNotifyList:" destination="2" eventType="touchUpInside" id="EOG-0E-E4z"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="anf-A8-320">
@@ -316,6 +319,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="toggleExtraInfo:" destination="2" eventType="touchUpInside" id="S9P-9m-aJu"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -526,8 +532,10 @@
         <class className="YCHomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/YCHomePageViewController.h"/>
             <relationships>
-                <relationship kind="action" name="indexInquirance:"/>
-                <relationship kind="action" name="indexInsurance:"/>
+                <relationship kind="action" name="indexInDoorService:"/>
+                <relationship kind="action" name="indexQuickSavior:"/>
+                <relationship kind="action" name="toggleExtraInfo:" candidateClass="UIButton"/>
+                <relationship kind="action" name="toggleNotifyList:" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="YCMyCenterIndexViewController" superclassName="UITableViewController">

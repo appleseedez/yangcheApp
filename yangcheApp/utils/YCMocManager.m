@@ -25,6 +25,7 @@
 #pragma mark - AutoService CRUD
 #define AUTO_SERVICE_ENTITY @"AutoService"
 #define SHOP_ENTITY @"Shop"
+#define NOTIFY @"Notify"
 -(id) insertNewObjectForEntityForName:(NSString*) name{
 	return [NSEntityDescription insertNewObjectForEntityForName:name inManagedObjectContext:moc];
 
@@ -48,10 +49,16 @@
 	return [self fetchEntitiesForName:AUTO_SERVICE_ENTITY];
 }
 
+- (NSArray*) fetchNotifies
+{
+	return [self fetchEntitiesForName:NOTIFY];
+}
+
 -(NSArray*) fetchShops
 {
 	return [self fetchEntitiesForName:SHOP_ENTITY];
 }
+
 - (NSArray*) fetchEntitiesForName:(NSString*) name{
 	NSError* error;
 	NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
@@ -59,8 +66,8 @@
 	[fetchRequest setEntity:entity];
 	[fetchRequest setFetchBatchSize:10];
 	
-	NSSortDescriptor* sorter = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-	[fetchRequest setSortDescriptors:@[sorter]];
+	//NSSortDescriptor* sorter = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+	//[fetchRequest setSortDescriptors:@[sorter]];
 	return [moc executeFetchRequest:fetchRequest error:&error];
 }
 

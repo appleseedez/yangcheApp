@@ -30,6 +30,8 @@
 	<string>MainStoryboard_iPad</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+		<string>telephony</string>
+		<string>location-services</string>
 		<string>armv7</string>
 	</array>
 	<key>UIStatusBarHidden</key>

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface YCHomePageViewController : UIViewController
+- (IBAction)toggleNotifyList:(UIButton *)sender;
+- (IBAction)toggleExtraInfo:(UIButton *)sender;
 
 @end

@@ -21,6 +21,7 @@
 
 - (NSArray*) fetchAutoServices;
 -(NSArray*) fetchShops;
+-(NSArray*) fetchNotifies;
 - (NSArray*) fetchEntitiesForName:(NSString*) name;
 - (void) deleteAutoService:(NSManagedObject*) autoService;
 - (void) commitChanges;

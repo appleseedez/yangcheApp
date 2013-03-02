@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1800AB3F16C4FFBF00BE307E /* YCShopHeadActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1800AB3E16C4FFBF00BE307E /* YCShopHeadActionCell.m */; };
 		1800AB4216C50C8500BE307E /* YCShopDetailMetaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1800AB4116C50C8500BE307E /* YCShopDetailMetaCell.m */; };
+		1804361716DE50F0006B5766 /* Notify.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804361616DE50F0006B5766 /* Notify.m */; };
+		1804361816DE50F0006B5766 /* Notify.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804361616DE50F0006B5766 /* Notify.m */; };
+		1804361B16DF3C02006B5766 /* Extra_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1804361A16DF3C02006B5766 /* Extra_iPhone_Storyboard.storyboard */; };
+		1804361E16DF3F07006B5766 /* YCExtraInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804361D16DF3F07006B5766 /* YCExtraInfoViewController.m */; };
+		1804361F16DF3F07006B5766 /* YCExtraInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804361D16DF3F07006B5766 /* YCExtraInfoViewController.m */; };
 		180B939116B134BC00E3CAE5 /* 01-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B92F116B134BB00E3CAE5 /* 01-magnify.png */; };
 		180B939216B134BC00E3CAE5 /* 01-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B92F216B134BB00E3CAE5 /* 01-magnify@2x.png */; };
 		180B939316B134BC00E3CAE5 /* 02-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B92F316B134BB00E3CAE5 /* 02-star.png */; };
@@ -745,6 +750,18 @@
 		186CE1AE16DC32640020B657 /* YCClaimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1AC16DC32640020B657 /* YCClaimViewController.m */; };
 		186CE1B116DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */; };
 		186CE1B216DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */; };
+		186D2C7B16DDF89800133C4E /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C7616DDF89800133C4E /* PKRevealController.m */; };
+		186D2C7C16DDF89800133C4E /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C7616DDF89800133C4E /* PKRevealController.m */; };
+		186D2C7D16DDF89800133C4E /* PKRevealControllerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C7816DDF89800133C4E /* PKRevealControllerContainerView.m */; };
+		186D2C7E16DDF89800133C4E /* PKRevealControllerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C7816DDF89800133C4E /* PKRevealControllerContainerView.m */; };
+		186D2C7F16DDF89800133C4E /* UIViewController+PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C7A16DDF89800133C4E /* UIViewController+PKRevealController.m */; };
+		186D2C8016DDF89800133C4E /* UIViewController+PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C7A16DDF89800133C4E /* UIViewController+PKRevealController.m */; };
+		186D2C8F16DE0D3A00133C4E /* YCNotifyIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C8E16DE0D3A00133C4E /* YCNotifyIndexCell.m */; };
+		186D2C9016DE0D3A00133C4E /* YCNotifyIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C8E16DE0D3A00133C4E /* YCNotifyIndexCell.m */; };
+		186D2C9316DE0EF700133C4E /* YCNotifyIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C9216DE0EF700133C4E /* YCNotifyIndexViewController.m */; };
+		186D2C9416DE0EF700133C4E /* YCNotifyIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2C9216DE0EF700133C4E /* YCNotifyIndexViewController.m */; };
+		186D2C9616DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186D2C9516DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard */; };
+		186D2C9716DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186D2C9516DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard */; };
 		186D834B16A152F0001089E5 /* 00_License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 186D82BC16A152F0001089E5 /* 00_License.txt */; };
 		186D834C16A152F0001089E5 /* 00_License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 186D82BC16A152F0001089E5 /* 00_License.txt */; };
 		186D834D16A152F0001089E5 /* alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186D82BD16A152F0001089E5 /* alarm@2x.png */; };
@@ -1256,7 +1273,6 @@
 		18DC59E0169B140500B79E9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DC59DF169B140500B79E9A /* Default.png */; };
 		18DC59E7169B140500B79E9A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DC59E5169B140500B79E9A /* MainStoryboard_iPhone.storyboard */; };
 		18DC59EA169B140500B79E9A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DC59E8169B140500B79E9A /* MainStoryboard_iPad.storyboard */; };
-		18DC59ED169B140500B79E9A /* YCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DC59EC169B140500B79E9A /* YCViewController.m */; };
 		18DC59F5169B140500B79E9A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DC59F4169B140500B79E9A /* SenTestingKit.framework */; };
 		18DC59F6169B140500B79E9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DC59CD169B140500B79E9A /* UIKit.framework */; };
 		18DC59F7169B140500B79E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DC59CF169B140500B79E9A /* Foundation.framework */; };
@@ -1295,6 +1311,11 @@
 		1800AB3E16C4FFBF00BE307E /* YCShopHeadActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCShopHeadActionCell.m; sourceTree = "<group>"; };
 		1800AB4016C50C8500BE307E /* YCShopDetailMetaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCShopDetailMetaCell.h; sourceTree = "<group>"; };
 		1800AB4116C50C8500BE307E /* YCShopDetailMetaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCShopDetailMetaCell.m; sourceTree = "<group>"; };
+		1804361516DE50F0006B5766 /* Notify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notify.h; sourceTree = SOURCE_ROOT; };
+		1804361616DE50F0006B5766 /* Notify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notify.m; sourceTree = SOURCE_ROOT; };
+		1804361A16DF3C02006B5766 /* Extra_iPhone_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Extra_iPhone_Storyboard.storyboard; sourceTree = "<group>"; };
+		1804361C16DF3F07006B5766 /* YCExtraInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCExtraInfoViewController.h; sourceTree = "<group>"; };
+		1804361D16DF3F07006B5766 /* YCExtraInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCExtraInfoViewController.m; sourceTree = "<group>"; };
 		180B92F116B134BB00E3CAE5 /* 01-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-magnify.png"; sourceTree = "<group>"; };
 		180B92F216B134BB00E3CAE5 /* 01-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-magnify@2x.png"; sourceTree = "<group>"; };
 		180B92F316B134BB00E3CAE5 /* 02-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-star.png"; sourceTree = "<group>"; };
@@ -2025,6 +2046,17 @@
 		186CE1AC16DC32640020B657 /* YCClaimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCClaimViewController.m; sourceTree = "<group>"; };
 		186CE1AF16DC3A320020B657 /* YCInsuranceApplyFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCInsuranceApplyFormViewController.h; sourceTree = "<group>"; };
 		186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCInsuranceApplyFormViewController.m; sourceTree = "<group>"; };
+		186D2C7516DDF89800133C4E /* PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealController.h; sourceTree = "<group>"; };
+		186D2C7616DDF89800133C4E /* PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealController.m; sourceTree = "<group>"; };
+		186D2C7716DDF89800133C4E /* PKRevealControllerContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealControllerContainerView.h; sourceTree = "<group>"; };
+		186D2C7816DDF89800133C4E /* PKRevealControllerContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealControllerContainerView.m; sourceTree = "<group>"; };
+		186D2C7916DDF89800133C4E /* UIViewController+PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PKRevealController.h"; sourceTree = "<group>"; };
+		186D2C7A16DDF89800133C4E /* UIViewController+PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PKRevealController.m"; sourceTree = "<group>"; };
+		186D2C8D16DE0D3A00133C4E /* YCNotifyIndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNotifyIndexCell.h; sourceTree = SOURCE_ROOT; };
+		186D2C8E16DE0D3A00133C4E /* YCNotifyIndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNotifyIndexCell.m; sourceTree = SOURCE_ROOT; };
+		186D2C9116DE0EF700133C4E /* YCNotifyIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNotifyIndexViewController.h; sourceTree = SOURCE_ROOT; };
+		186D2C9216DE0EF700133C4E /* YCNotifyIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNotifyIndexViewController.m; sourceTree = SOURCE_ROOT; };
+		186D2C9516DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify_iPhone_Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
 		186D82BC16A152F0001089E5 /* 00_License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00_License.txt; sourceTree = "<group>"; };
 		186D82BD16A152F0001089E5 /* alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@2x.png"; sourceTree = "<group>"; };
 		186D82BE16A152F0001089E5 /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down@2x.png"; sourceTree = "<group>"; };
@@ -2374,8 +2406,6 @@
 		18DC59DF169B140500B79E9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		18DC59E6169B140500B79E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		18DC59E9169B140500B79E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		18DC59EB169B140500B79E9A /* YCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCViewController.h; sourceTree = "<group>"; };
-		18DC59EC169B140500B79E9A /* YCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCViewController.m; sourceTree = "<group>"; };
 		18DC59F3169B140500B79E9A /* yangcheAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yangcheAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DC59F4169B140500B79E9A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		18DC59FC169B140500B79E9A /* yangcheAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "yangcheAppTests-Info.plist"; sourceTree = "<group>"; };
@@ -2442,6 +2472,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1804361416DE50D1006B5766 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				1804361516DE50F0006B5766 /* Notify.h */,
+				1804361616DE50F0006B5766 /* Notify.m */,
+			);
+			name = vo;
+			sourceTree = "<group>";
+		};
+		1804361916DF3A1E006B5766 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				181A18CC16E096E700A1E6F0 /* customCell */,
+				1804361A16DF3C02006B5766 /* Extra_iPhone_Storyboard.storyboard */,
+				1804361C16DF3F07006B5766 /* YCExtraInfoViewController.h */,
+				1804361D16DF3F07006B5766 /* YCExtraInfoViewController.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
 		180B929E16B134BB00E3CAE5 /* mini */ = {
 			isa = PBXGroup;
 			children = (
@@ -3246,6 +3296,13 @@
 			path = home;
 			sourceTree = "<group>";
 		};
+		181A18CC16E096E700A1E6F0 /* customCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = customCell;
+			sourceTree = "<group>";
+		};
 		186CE19F16DC2D750020B657 /* claim */ = {
 			isa = PBXGroup;
 			children = (
@@ -3266,6 +3323,41 @@
 				186CE1B016DC3A320020B657 /* YCInsuranceApplyFormViewController.m */,
 			);
 			path = insurance;
+			sourceTree = "<group>";
+		};
+		186D2C7416DDF88200133C4E /* PKRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				186D2C7516DDF89800133C4E /* PKRevealController.h */,
+				186D2C7616DDF89800133C4E /* PKRevealController.m */,
+				186D2C7716DDF89800133C4E /* PKRevealControllerContainerView.h */,
+				186D2C7816DDF89800133C4E /* PKRevealControllerContainerView.m */,
+				186D2C7916DDF89800133C4E /* UIViewController+PKRevealController.h */,
+				186D2C7A16DDF89800133C4E /* UIViewController+PKRevealController.m */,
+			);
+			name = PKRevealController;
+			path = yangcheApp/PKRevealController;
+			sourceTree = "<group>";
+		};
+		186D2C8116DE0B1E00133C4E /* notify */ = {
+			isa = PBXGroup;
+			children = (
+				1804361416DE50D1006B5766 /* vo */,
+				186D2C8C16DE0D1A00133C4E /* customCell */,
+				186D2C9116DE0EF700133C4E /* YCNotifyIndexViewController.h */,
+				186D2C9216DE0EF700133C4E /* YCNotifyIndexViewController.m */,
+				186D2C9516DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard */,
+			);
+			path = notify;
+			sourceTree = "<group>";
+		};
+		186D2C8C16DE0D1A00133C4E /* customCell */ = {
+			isa = PBXGroup;
+			children = (
+				186D2C8D16DE0D3A00133C4E /* YCNotifyIndexCell.h */,
+				186D2C8E16DE0D3A00133C4E /* YCNotifyIndexCell.m */,
+			);
+			name = customCell;
 			sourceTree = "<group>";
 		};
 		186D82BA16A152F0001089E5 /* tabicon */ = {
@@ -3657,7 +3749,7 @@
 		18DC59BE169B140400B79E9A = {
 			isa = PBXGroup;
 			children = (
-				185DBF3316D9AD9E00E048A1 /* CoreLocation.framework */,
+				186D2C7416DDF88200133C4E /* PKRevealController */,
 				18EA6EE816B51E950070BA1D /* AFNetworking */,
 				18DC59D3169B140500B79E9A /* yangcheApp */,
 				18DC59FA169B140500B79E9A /* yangcheAppTests */,
@@ -3678,6 +3770,7 @@
 		18DC59CC169B140500B79E9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185DBF3316D9AD9E00E048A1 /* CoreLocation.framework */,
 				189DD93116AD27B90079D737 /* MapKit.framework */,
 				186D847F16A24EFE001089E5 /* CoreData.framework */,
 				186D847C16A24EF0001089E5 /* QuartzCore.framework */,
@@ -3692,6 +3785,8 @@
 		18DC59D3169B140500B79E9A /* yangcheApp */ = {
 			isa = PBXGroup;
 			children = (
+				1804361916DF3A1E006B5766 /* extra */,
+				186D2C8116DE0B1E00133C4E /* notify */,
 				186CE1A016DC2D800020B657 /* insurance */,
 				186CE19F16DC2D750020B657 /* claim */,
 				18A2E5E816DBA908008E5989 /* search */,
@@ -3703,8 +3798,6 @@
 				18DC59DD169B140500B79E9A /* YCAppDelegate.m */,
 				18DC59E5169B140500B79E9A /* MainStoryboard_iPhone.storyboard */,
 				18DC59E8169B140500B79E9A /* MainStoryboard_iPad.storyboard */,
-				18DC59EB169B140500B79E9A /* YCViewController.h */,
-				18DC59EC169B140500B79E9A /* YCViewController.m */,
 				18DC59D4169B140500B79E9A /* Supporting Files */,
 			);
 			path = yangcheApp;
@@ -4854,6 +4947,8 @@
 				18CDB86816DB4D270065BA86 /* 60-x@2x.png in Resources */,
 				186CE1A216DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard in Resources */,
 				186CE1A516DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard in Resources */,
+				186D2C9616DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard in Resources */,
+				1804361B16DF3C02006B5766 /* Extra_iPhone_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5037,6 +5132,7 @@
 				18AA4BEE16D8957F00C8962F /* YCOrderFormInputAccessoryToolbarView.xib in Resources */,
 				186CE1A316DC2DEC0020B657 /* Claims_Storyboard_iPhone.storyboard in Resources */,
 				186CE1A616DC2EC60020B657 /* Insurance_Storyboard_iPhone.storyboard in Resources */,
+				186D2C9716DE0F1C00133C4E /* Notify_iPhone_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5065,7 +5161,6 @@
 			files = (
 				18DC59DA169B140500B79E9A /* main.m in Sources */,
 				18DC59DE169B140500B79E9A /* YCAppDelegate.m in Sources */,
-				18DC59ED169B140500B79E9A /* YCViewController.m in Sources */,
 				186D846B16A16B24001089E5 /* YCMyCenterIndexViewController.m in Sources */,
 				186D848716A253F3001089E5 /* YangcheApp.xcdatamodeld in Sources */,
 				186D849016A2580F001089E5 /* YCMocManager.m in Sources */,
@@ -5117,6 +5212,13 @@
 				186CE1A916DC313E0020B657 /* YCInsuranceViewController.m in Sources */,
 				186CE1AD16DC32640020B657 /* YCClaimViewController.m in Sources */,
 				186CE1B116DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */,
+				186D2C7B16DDF89800133C4E /* PKRevealController.m in Sources */,
+				186D2C7D16DDF89800133C4E /* PKRevealControllerContainerView.m in Sources */,
+				186D2C7F16DDF89800133C4E /* UIViewController+PKRevealController.m in Sources */,
+				186D2C8F16DE0D3A00133C4E /* YCNotifyIndexCell.m in Sources */,
+				186D2C9316DE0EF700133C4E /* YCNotifyIndexViewController.m in Sources */,
+				1804361716DE50F0006B5766 /* Notify.m in Sources */,
+				1804361E16DF3F07006B5766 /* YCExtraInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5158,6 +5260,13 @@
 				186CE1AA16DC313E0020B657 /* YCInsuranceViewController.m in Sources */,
 				186CE1AE16DC32640020B657 /* YCClaimViewController.m in Sources */,
 				186CE1B216DC3A320020B657 /* YCInsuranceApplyFormViewController.m in Sources */,
+				186D2C7C16DDF89800133C4E /* PKRevealController.m in Sources */,
+				186D2C7E16DDF89800133C4E /* PKRevealControllerContainerView.m in Sources */,
+				186D2C8016DDF89800133C4E /* UIViewController+PKRevealController.m in Sources */,
+				186D2C9016DE0D3A00133C4E /* YCNotifyIndexCell.m in Sources */,
+				186D2C9416DE0EF700133C4E /* YCNotifyIndexViewController.m in Sources */,
+				1804361816DE50F0006B5766 /* Notify.m in Sources */,
+				1804361F16DF3F07006B5766 /* YCExtraInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

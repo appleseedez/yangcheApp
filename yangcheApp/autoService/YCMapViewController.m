@@ -42,16 +42,20 @@
 	autoService = [mocManager fetchByURI:self.moURI];
 	
 	if ([CLLocationManager locationServicesEnabled]) {
+		// 能用SignificantLocationChange尽量用,省电哈
 		myLocationManager = [[CLLocationManager alloc] init];
 		myLocationManager.delegate = self;
-		myLocationManager.desiredAccuracy = kCLLocationAccuracyBest;
-		myLocationManager.distanceFilter = 1000.0f;
+		// SignificantLocationChange 不需要指定这两项
+		//myLocationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+		//myLocationManager.distanceFilter = 500;
 		myGeocoder = [[CLGeocoder alloc] init];
 	}
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-	[myLocationManager startUpdatingLocation];
+	// 能用SignificantLocationChange尽量用,省电哈
+	//[myLocationManager startUpdatingLocation];
+	[myLocationManager startMonitoringSignificantLocationChanges];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,12 +73,23 @@
 }
 
 #pragma mark - location delegate
+// ios5 使用
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
+	NSArray* locations = @[oldLocation,newLocation];
+	[self locationManager:manager didUpdateLocations:locations];
+}
+
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
 	currentLocation = [locations lastObject];
 	self.mapView.showsUserLocation = YES;
-	[myLocationManager stopUpdatingLocation];
-	MKCircle* circle = [MKCircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(self.mapView.userLocation.location.coordinate.latitude, self.mapView.userLocation.location.coordinate.longitude) radius:5000];
-	[self.mapView addAnnotation:circle];
+	[myLocationManager stopMonitoringSignificantLocationChanges]; 
+	//[myLocationManager stopUpdatingLocation];
+	// 如果更新时间
+	//NSDate* eventDate = currentLocation.timestamp;
+	//NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+	//if (abs(howRecent)<10.0) {
+
 	
 	[myGeocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error){
 		if (error == nil && [placemarks count]>0) {
@@ -84,17 +99,21 @@
 			self.mapView.userLocation.title = locationAt;
 			self.mapView.userLocation.subtitle = @"我在这里";
 			
-			MKCoordinateRegion theRegion = { {0.0, 0.0 }, { 0.0, 0.0 } };
-			theRegion.center= self.mapView.userLocation.location.coordinate;
+			MKCoordinateRegion theRegion;
+			theRegion.center= [[myLocationManager location] coordinate];
 			//缩放的精度。数值越小约精准
-			theRegion.span.longitudeDelta = 0.01f;
-			theRegion.span.latitudeDelta = 0.01f;
+			theRegion.span.longitudeDelta = 0.05f;
+			theRegion.span.latitudeDelta = 0.05f;
 			//让MapView显示缩放后的地图。
 			[self.mapView setRegion:theRegion animated:YES];
 			
-
+//			MKCircle* circle = [MKCircle circleWithCenterCoordinate:[[myLocationManager location] coordinate] radius:10];
+//			[self.mapView addAnnotation:circle];
 		}
 	}];
+	//}
+	
+	
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{

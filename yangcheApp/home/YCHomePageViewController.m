@@ -7,7 +7,9 @@
 //
 
 #import "YCHomePageViewController.h"
-
+#import "PKRevealController.h"
+#import "YCNotifyIndexViewController.h"
+#import <QuartzCore/QuartzCore.h>
 @interface YCHomePageViewController ()
 
 @end
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
 
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,5 +67,29 @@
 - (IBAction)indexClaims:(id)sender{
 	UIStoryboard* claimDetailSB = [UIStoryboard storyboardWithName:@"Claims_Storyboard_iPhone" bundle:nil];
     [self presentViewController:[claimDetailSB instantiateInitialViewController] animated:YES completion:nil];
+}
+- (IBAction)toggleNotifyList:(UIButton *)sender {
+	if (self.tabBarController.revealController.focusedController == self.tabBarController.revealController.leftViewController)
+    {
+        [self.tabBarController.revealController showViewController:self.tabBarController.revealController.frontViewController];
+    }
+    else
+    {
+		
+        [self.tabBarController.revealController showViewController:self.tabBarController.revealController.leftViewController];
+    }
+	
+}
+
+- (IBAction)toggleExtraInfo:(UIButton *)sender {
+	if (self.tabBarController.revealController.focusedController == self.tabBarController.revealController.rightViewController)
+    {
+        [self.tabBarController.revealController showViewController:self.tabBarController.revealController.frontViewController];
+    }
+    else
+    {
+		
+        [self.tabBarController.revealController showViewController:self.tabBarController.revealController.rightViewController];
+    }
 }
 @end

@@ -23,6 +23,11 @@
         <attribute name="update_time" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="autoService" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AutoService" inverseName="comments" inverseEntity="AutoService" syncable="YES"/>
     </entity>
+    <entity name="Notify" representedClassName="Notify" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Shop" representedClassName="Shop" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
@@ -33,7 +38,8 @@
     </entity>
     <elements>
         <element name="AutoService" positionX="27" positionY="-90" width="128" height="240"/>
-        <element name="Shop" positionX="430" positionY="63" width="128" height="133"/>
         <element name="Comment" positionX="367" positionY="243" width="128" height="133"/>
+        <element name="Shop" positionX="430" positionY="63" width="128" height="133"/>
+        <element name="Notify" positionX="-171" positionY="234" width="128" height="90"/>
     </elements>
 </model>
