@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
-@interface YCExtraInfoViewController : UITableViewController <UITextFieldDelegate,CLLocationManagerDelegate>
+@interface YCExtraInfoViewController : UITableViewController <UITextViewDelegate,CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *currentPositionIconView;
 @property (weak, nonatomic) IBOutlet UILabel *currentPositionLabelView;
 
 @property (weak, nonatomic) IBOutlet MKMapView *currentPositionMapView;
+@property (weak, nonatomic) IBOutlet UITextView *editPositionTextView;
 
 @end

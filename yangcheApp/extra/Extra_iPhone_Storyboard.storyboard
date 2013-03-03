@@ -27,12 +27,21 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="四川成都市郫县四川外国语学院成都学院教师公寓A座" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i9Z-2y-7a1">
-                                                    <rect key="frame" x="53" y="14" width="207" height="32"/>
+                                                    <rect key="frame" x="43" y="14" width="217" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZGi-Le-poQ">
+                                                    <rect key="frame" x="35" y="7" width="231" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="d1y-vc-qbo" id="kJn-hi-gVz"/>
+                                                    </connections>
+                                                </textView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -68,6 +77,7 @@
                         <outlet property="currentPositionIconView" destination="owB-pJ-wwr" id="15i-cM-DbG"/>
                         <outlet property="currentPositionLabelView" destination="i9Z-2y-7a1" id="oHs-zh-hcW"/>
                         <outlet property="currentPositionMapView" destination="b1w-K2-1ng" id="Hki-Yo-uLU"/>
+                        <outlet property="editPositionTextView" destination="ZGi-Le-poQ" id="ofY-gj-3Mk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ze-ss-iWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -103,6 +113,7 @@
                 <relationship kind="outlet" name="currentPositionIconView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="currentPositionLabelView" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="currentPositionMapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="editPositionTextView" candidateClass="UITextView"/>
             </relationships>
         </class>
     </classes>

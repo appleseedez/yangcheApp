@@ -7,7 +7,7 @@
 //
 
 #import "YCExtraInfoViewController.h"
-
+#import "PKRevealController.h"
 @interface YCExtraInfoViewController (){
 	CLLocationManager* locationManager;
 	CLLocation* currentLocation;
@@ -133,4 +133,24 @@
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
 	
 }
+
+# pragma mark - textview delegate
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+	self.currentPositionLabelView.text = @"";
+	// 进入全屏模式
+//	if (![self.revealController isPresentationModeActive])
+//    {
+//        [self.revealController enterPresentationModeAnimated:YES
+//                                                  completion:NULL];
+//    }
+//    else
+//    {
+//        [self.revealController resignPresentationModeEntirely:NO
+//                                                     animated:YES
+//                                                   completion:NULL];
+//    }
+	
+	return YES;
+}
+
 @end
