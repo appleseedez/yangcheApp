@@ -377,7 +377,7 @@
             <objects>
                 <tableViewController id="dW8-li-WSh" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="e6A-K1-dwi">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -418,11 +418,11 @@
                             <outlet property="delegate" destination="dW8-li-WSh" id="MRx-Oo-kWy"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="更多" image="14-gear" id="sBZ-Pl-Pn3"/>
+                    <navigationItem key="navigationItem" title="更多" id="EAX-pg-HvD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXR-Et-s38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1319" y="-73"/>
+            <point key="canvasLocation" x="814" y="503"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h7K-kf-Rxc">
@@ -438,7 +438,7 @@
                         <segue destination="kZL-yF-Apy" kind="relationship" relationship="viewControllers" id="ANU-Gl-G2b"/>
                         <segue destination="DKu-u6-Bhk" kind="relationship" relationship="viewControllers" id="mIo-Xu-eZm"/>
                         <segue destination="jvD-gY-U1O" kind="relationship" relationship="viewControllers" id="5lV-ap-E8Y"/>
-                        <segue destination="dW8-li-WSh" kind="relationship" relationship="viewControllers" id="qzU-49-Uf9"/>
+                        <segue destination="Cqv-H9-cIJ" kind="relationship" relationship="viewControllers" id="qzU-49-Uf9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYj-5y-Olt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,6 +503,25 @@
             </objects>
             <point key="canvasLocation" x="334" y="-73"/>
         </scene>
+        <!--Navigation Controller - 更多-->
+        <scene sceneID="FQG-dC-afx">
+            <objects>
+                <navigationController id="Cqv-H9-cIJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="更多" image="14-gear" id="sBZ-Pl-Pn3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xmx-SG-Ae8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dW8-li-WSh" kind="relationship" relationship="rootViewController" id="qmR-Hs-X6x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbh-EW-kwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="-79"/>
+        </scene>
     </scenes>
     <resources>
         <image name="01-magnify" width="16" height="16"/>
@@ -532,7 +551,11 @@
         <class className="YCHomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/YCHomePageViewController.h"/>
             <relationships>
+                <relationship kind="action" name="indexAutoService:"/>
+                <relationship kind="action" name="indexClaims:"/>
                 <relationship kind="action" name="indexInDoorService:"/>
+                <relationship kind="action" name="indexInquirance:"/>
+                <relationship kind="action" name="indexInsurance:"/>
                 <relationship kind="action" name="indexQuickSavior:"/>
                 <relationship kind="action" name="toggleExtraInfo:" candidateClass="UIButton"/>
                 <relationship kind="action" name="toggleNotifyList:" candidateClass="UIButton"/>
