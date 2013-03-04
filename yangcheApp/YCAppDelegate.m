@@ -13,6 +13,11 @@
 @implementation YCAppDelegate
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+		return YES;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
 	// 导航栏皮肤
 	UIImage *bg = [[UIImage imageNamed:@"nav_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
 	[[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
@@ -22,6 +27,7 @@
 	// 将PKRevealController 添加进来
 	
 	UIViewController* frontViewController =  self.window.rootViewController;
+	self.window.rootViewController = nil;
 	UIStoryboard* notifySB = [UIStoryboard storyboardWithName:@"Notify_iPhone_Storyboard" bundle:nil];
 	UIStoryboard* extraInfoSB = [UIStoryboard storyboardWithName:@"Extra_iPhone_Storyboard" bundle:nil];
 	
@@ -29,16 +35,12 @@
 	YCExtraInfoViewController* extraInfoListViewController = [extraInfoSB instantiateInitialViewController];
 	
 	self.revealController =[PKRevealController revealControllerWithFrontViewController:frontViewController
-																				 leftViewController:notifyListViewController
-																				rightViewController:extraInfoListViewController
-										 										options:nil];
-
+																	leftViewController:notifyListViewController
+																   rightViewController:extraInfoListViewController
+																			   options:nil];
+	
 	self.window.rootViewController = self.revealController;
-	return YES;
-}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
 
 	[self.window makeKeyAndVisible];
     return YES;

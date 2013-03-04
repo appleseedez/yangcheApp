@@ -89,7 +89,13 @@
 # pragma mark - location delegate
 // ios5 用的
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
-	NSArray* locations = @[oldLocation,newLocation];
+	NSArray* locations;
+	if (oldLocation != nil) {
+		locations = @[oldLocation,newLocation];
+	}else{
+		locations = @[newLocation];
+	}
+	 
 	[self locationManager:manager didUpdateLocations:locations];
 }
 

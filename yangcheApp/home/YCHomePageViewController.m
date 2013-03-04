@@ -7,9 +7,10 @@
 //
 
 #import "YCHomePageViewController.h"
-#import "PKRevealController.h"
+
 #import "YCNotifyIndexViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "PKRevealController.h"
 @interface YCHomePageViewController ()
 
 @end
@@ -69,15 +70,19 @@
     [self presentViewController:[claimDetailSB instantiateInitialViewController] animated:YES completion:nil];
 }
 - (IBAction)toggleNotifyList:(UIButton *)sender {
+	
 	if (self.tabBarController.revealController.focusedController == self.tabBarController.revealController.leftViewController)
     {
         [self.tabBarController.revealController showViewController:self.tabBarController.revealController.frontViewController];
     }
     else
     {
-		
+
         [self.tabBarController.revealController showViewController:self.tabBarController.revealController.leftViewController];
     }
+	
+	
+
 	
 }
 

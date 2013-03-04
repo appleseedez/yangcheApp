@@ -541,43 +541,6 @@
         <image name="notify_btn" width="16" height="16"/>
         <image name="背景.png" width="640" height="960"/>
     </resources>
-    <classes>
-        <class className="YCGlobalSearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/YCGlobalSearchViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="YCHomePageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/YCHomePageViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="indexAutoService:"/>
-                <relationship kind="action" name="indexClaims:"/>
-                <relationship kind="action" name="indexInDoorService:"/>
-                <relationship kind="action" name="indexInquirance:"/>
-                <relationship kind="action" name="indexInsurance:"/>
-                <relationship kind="action" name="indexQuickSavior:"/>
-                <relationship kind="action" name="toggleExtraInfo:" candidateClass="UIButton"/>
-                <relationship kind="action" name="toggleNotifyList:" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="YCMyCenterIndexViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/YCMyCenterIndexViewController.h"/>
-        </class>
-        <class className="YCMyOrderIndexCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/YCMyOrderIndexCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myOrderIndexThumbView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="YCMyProfileCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/YCMyProfileCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myProfileNameView" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myProfileThumbView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
